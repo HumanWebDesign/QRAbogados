@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#14161a">
+    <link rel="canonical" href="https://qrabogados.cl/legal.html">
     <title>Términos, Condiciones y Protección de Datos | QR Abogados</title>
     <meta name="description" content="Términos y condiciones de uso y política de protección de datos personales de QR Abogados, conforme a la Ley N° 21.719.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +17,17 @@
   <body>
 
   <div class="legal legal-page show" id="legal">
-    <div class="legal-bar">
+    <header class="legal-bar">
       <div class="wrap legal-bar-in">
         <a href="index.html" class="nav-logo"><img src="logo.png" alt="QR Abogados"></a>
         <a class="legal-close" id="legalClose" href="index.html">Volver al sitio
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </a>
       </div>
-    </div>
+    </header>
 
     <div class="wrap legal-body">
-      <aside class="legal-side">
+      <aside class="legal-side" aria-label="Navegación del documento">
         <span class="eyebrow">Documentos legales</span>
         <div class="legal-tabs" role="tablist" aria-label="Documentos">
           <button type="button" role="tab" id="tab-terminos" data-tab="terminos" aria-selected="true" aria-controls="panel-terminos">Términos y condiciones</button>
@@ -35,7 +36,7 @@
         <nav aria-label="Índice del documento"><ol class="legal-toc" id="legalToc"></ol></nav>
       </aside>
 
-      <div class="legal-main" id="legalMain" tabindex="-1">
+      <main class="legal-main" id="legalMain" tabindex="-1">
         <p class="legal-meta">Última actualización: 1 de diciembre de 2026 · Versión 1.0</p>
 
         <!-- ===== TÉRMINOS Y CONDICIONES ===== -->
@@ -118,10 +119,10 @@
             <h3>Finalidad y base de licitud</h3>
             <div class="legal-table" role="table" aria-label="Finalidades y bases de licitud">
               <div class="lt-row lt-head" role="row"><span role="columnheader">Finalidad</span><span role="columnheader">Base de licitud</span></div>
-              <div class="lt-row" role="row"><span role="cell">Responder su solicitud y evaluar si podemos asumir su caso.</span><span role="cell">Medidas precontractuales solicitadas por usted y su consentimiento.</span></div>
-              <div class="lt-row" role="row"><span role="cell">Elaborar la propuesta de honorarios y ejecutar el contrato de servicios.</span><span role="cell">Ejecución de contrato.</span></div>
-              <div class="lt-row" role="row"><span role="cell">Cumplir obligaciones legales, tributarias y de ética profesional.</span><span role="cell">Obligación legal.</span></div>
-              <div class="lt-row" role="row"><span role="cell">Seguridad del sitio y prevención de abusos.</span><span role="cell">Interés legítimo.</span></div>
+              <div class="lt-row" role="row"><span role="cell" data-label="Finalidad">Responder su solicitud y evaluar si podemos asumir su caso.</span><span role="cell" data-label="Base de licitud">Medidas precontractuales solicitadas por usted y su consentimiento.</span></div>
+              <div class="lt-row" role="row"><span role="cell" data-label="Finalidad">Elaborar la propuesta de honorarios y ejecutar el contrato de servicios.</span><span role="cell" data-label="Base de licitud">Ejecución de contrato.</span></div>
+              <div class="lt-row" role="row"><span role="cell" data-label="Finalidad">Cumplir obligaciones legales, tributarias y de ética profesional.</span><span role="cell" data-label="Base de licitud">Obligación legal.</span></div>
+              <div class="lt-row" role="row"><span role="cell" data-label="Finalidad">Seguridad del sitio y prevención de abusos.</span><span role="cell" data-label="Base de licitud">Interés legítimo.</span></div>
             </div>
             <p>No usamos sus datos para publicidad ni para decisiones automatizadas, y no los vendemos ni cedemos con fines comerciales.</p>
           </div>
@@ -174,10 +175,11 @@
             <p>Cualquier modificación sustancial se publicará aquí con su nueva fecha de actualización.</p>
           </div>
         </article>
-      </div>
+      </main>
     </div>
   </div>
 
+  <script src="script.js" defer></script>
   <script src="legal.js"></script>
   </body>
 </html>
